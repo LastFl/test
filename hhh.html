@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>专家主页</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 20px;
+        }
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            background-color: #f9f9f9;
+        }
+        h2 {
+            color: #333;
+        }
+        .btn {
+            display: inline-block;
+            padding: 12px 20px;
+            margin: 10px;
+            font-size: 16px;
+            color: white;
+            background-color: #007bff;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            cursor: pointer;
+        }
+        .btn:hover {
+            background-color: #0056b3;
+        }
+        .alert {
+            display: none;
+            padding: 10px;
+            color: red;
+            font-size: 14px;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h2>欢迎来到专家主页</h2>
+        <p>您可以在这里查看专家信息</p>
+
+        <button class="btn" onclick="openApp()">打开 APP</button>
+        <p class="alert" id="wxAlert">请点击右上角，选择“在浏览器打开”</p>
+
+        <p>还没有安装 APP？</p>
+        <a class="btn" href="https://play.google.com/store/apps/details?id=com.poxiao.soccer" id="downloadBtn">前往下载</a>
+    </div>
+
+    <script>
+        function openApp() {
+        }
+    </script>
+
+</body>
+</html>
