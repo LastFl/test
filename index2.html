@@ -275,12 +275,20 @@
           background: rgba(0, 33, 66, 0.3);
           border-radius: 8px;
           color: white;
-          font-size: 16px;
+          font-size: 14px;
           transition: all 0.3s ease;
           position: relative;
           z-index: 1;
       }
 
+/* iOS 在表单字体小于 16px 时会自动放大页面，这里强制 16px 防止弹出键盘时页面缩放*/
+      @supports (-webkit-touch-callout: none) {
+          body input,
+          body .login-form input {
+              font-size: 16px !important;
+              background: red;
+          }
+      }
       .login-form input:focus {
           border-color: var(--accent);
           outline: none;
@@ -448,7 +456,7 @@
 
           .brand-section {
               padding: 30px 20px;
-              flex: none;
+              display: none;
               height: auto;
               border-right: none;
               border-bottom: 1px solid rgba(0, 102, 204, 0.3);
@@ -843,3 +851,4 @@
 </body>
 
 </html>
+
